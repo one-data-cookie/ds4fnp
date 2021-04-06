@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ds4fnp
+    loader: meltano
+    tables:
+      - name: mit__house_elections
+        description: MIT house election data
+      - name: mit__senate_elections
+        description: MIT senate election data
+      - name: mit__president_elections
+        description: MIT president election data

@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_us_house_election_results
+    description: US House election results
+  - name: stg_us_senate_election_results
+    description: US Senate election results
+  - name: stg_us_president_election_results
+    description: US President election results
