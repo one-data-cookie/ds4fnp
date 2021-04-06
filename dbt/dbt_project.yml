@@ -33,10 +33,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   ds4fnp:
-    staging:
-        +schema: staging
+    stage:
+        +schema: stage
         +materialized: view
-    # marts:
-    elections:
-        +schema: elections
+    marts:
+        +schema: marts
         +materialized: view
