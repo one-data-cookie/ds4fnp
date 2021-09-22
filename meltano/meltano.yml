@@ -9,21 +9,21 @@ plugins:
       tables:
       - path: https://dataverse.harvard.edu/api/access/datafile/
         name: mit__house_elections
-        pattern: "4202836"
+        pattern: '4202836'
         start_date: '2010-01-01T00:00:00Z'
         key_properties: []
         format: csv
         delimiter: "\t"
       - path: https://dataverse.harvard.edu/api/access/datafile/
         name: mit__senate_elections
-        pattern: "4300300"
+        pattern: '4300300'
         start_date: '2010-01-01T00:00:00Z'
         key_properties: []
         format: csv
         delimiter: "\t"
       - path: https://dataverse.harvard.edu/api/access/datafile/
         name: mit__president_elections
-        pattern: "4299753"
+        pattern: '4299753'
         start_date: '2010-01-01T00:00:00Z'
         key_properties: []
         format: csv
@@ -39,3 +39,11 @@ plugins:
       postgres_schema: ds4fnp
       postgres_username: ds4fnp
       postgres_password: ds4fnp
+  - name: target-bigquery
+    variant: adswerve
+    pip_url: git+https://github.com/adswerve/target-bigquery.git@v0.10.2
+    config:
+      project_id: ds4fnp
+      dataset_id: ds4fnp
+      location: EU
+      credentials_path: '/Volumes/Google Drive/My Drive/Activities/Data Projects/bigquery_credentials.json'
