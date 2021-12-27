@@ -9,7 +9,7 @@ rnk as (
                 district
             order by
                 votes_tally desc
-        ) AS pos
+        ) as pos
     from
         {{ ref('stg_us_house_election_results') }}
 ),
