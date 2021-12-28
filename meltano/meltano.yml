@@ -46,4 +46,4 @@ plugins:
       project_id: ds4fnp
       dataset_id: ds4fnp
       location: EU
-      credentials_path: '/Volumes/Google Drive/My Drive/Activities/Data Projects/bigquery_credentials.json'
+      credentials_path: '/Users/michal/GitHub/ds4fnp/bigquery_credentials.json'
